@@ -2,9 +2,10 @@ package calculation;
 
 import java.util.Scanner;
 
-public class SubtractNnumbers {
+public class SubtractNnumbers extends MenuDrivenForNnumbers {
+	void getResult()
 
-	public static void main(String[] args) {
+	{
 
 		Scanner sc = new Scanner(System.in);
 		int result=0;

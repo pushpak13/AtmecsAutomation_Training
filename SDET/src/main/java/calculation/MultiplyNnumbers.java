@@ -2,10 +2,11 @@ package calculation;
 
 import java.util.Scanner;
 
-public class MultiplyNnumbers {
+public class MultiplyNnumbers extends MenuDrivenForNnumbers {
+	void getResult()
 
-	public static void main(String[] args) {
-		int index,num1,product=1;
+	{
+		int index,num1,result=1;
 		Scanner sc = new Scanner(System.in);
 		System.out.print("How many elements u want to multiply : ");
 		num1 = sc.nextInt();
@@ -16,10 +17,10 @@ public class MultiplyNnumbers {
 		for(index=0;index<num1;index++)
 		{
 			System.out.print("Enter "+(index+1)+" Element : ");
-			Array[index]=sc.nextInt();
-			product = product * Array[index];
+			Array[index] = sc.nextInt();
+			result = result * Array[index];
 		}
-		System.out.println("Multiplication of elements is:" +product);
+		System.out.println("Multiplication of elements is:" +result);
 
 	}
 
