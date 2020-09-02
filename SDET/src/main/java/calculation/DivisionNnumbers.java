@@ -2,7 +2,8 @@ package calculation;
 
 import java.util.Scanner;
 
-public class DivisionNnumbers extends MenuDrivenForNnumbers {
+public class DivisionNnumbers  
+{
 	void getResult()
 
 	{
@@ -12,24 +13,27 @@ public class DivisionNnumbers extends MenuDrivenForNnumbers {
 		System.out.println("How many numbers do you want to divide? ");
 
 		num = sc.nextInt();
-		double[] divisionArray = new double[num];
+		double [] divisionArray = new double [num];
 
 
 
 		for(index = 0; index < num; index++) {
 			System.out.print("Enter " +(index+1)+" numbers: ");
-			divisionArray[index] = sc.nextDouble();
+			divisionArray[index] =  sc.nextDouble();
 		}
 
 
 
 		double result = divisionArray[0];
-		for(index1 = 1; index1 < num; index1 ++) {
+		for(index1 = 1; index1 < num; index1 ++) 
+
 			result = result / divisionArray[index1];
-		}
+
 		System.out.println("Division of all numbers is "+result);
 
 
 	}
 
 }
+
+

@@ -2,7 +2,7 @@ package calculation;
 
 import java.util.Scanner;
 
-public class AdditionOfNnumbers extends MenuDrivenForNnumbers {
+public class AdditionOfNnumbers  {
 	void getResult()
 
 	{

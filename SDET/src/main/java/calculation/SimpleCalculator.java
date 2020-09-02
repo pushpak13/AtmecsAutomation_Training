@@ -25,6 +25,7 @@ public class SimpleCalculator {
 		break;
 		default: System.out.printf("Error! Enter correct operator");
 		return;
+		
 		}
 		System.out.print("\nThe result is given as follows:\n");
 		System.out.printf(num1 + " " + op + " " + num2 + " = " + ans);
