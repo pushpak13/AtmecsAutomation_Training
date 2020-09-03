@@ -1,15 +1,16 @@
 package collections;
 
-import java.util.ArrayList;
+
+import java.util.Vector;
 
 public class SubtractCollection extends CalculateCollection {
-	public void sub(ArrayList<Integer> alist) {
+	public void sub(Vector<Integer> vector) {
 
-		subtract = alist.get(0);
+		subtract = vector.get(0);
 
-		for(int index = 0; index < alist.size()-1; index++)
+		for(int index = 0; index < vector.size()-1; index++)
 		{
-			subtract =subtract - alist.get(index+1);
+			subtract =subtract - vector.get(index+1);
 		}
 		System.out.println(subtract);
 	}

@@ -1,16 +1,17 @@
 package collections;
 
-import java.util.ArrayList;
+
+import java.util.Vector;
 
 public class DivideCollection extends CalculateCollection {
-	public void div(ArrayList<Integer> alist) {
+	public void div(Vector<Integer> vector) {
 
-		divide = alist.get(0);
+		divide = vector.get(0);
 
-		for(int index = 0; index< alist.size()-1; index++)
+		for(int index = 0; index< vector.size()-1; index++)
 		{
 
-			divide = divide / alist.get(index+1);
+			divide = divide / vector.get(index+1);
 		} 
 		System.out.println(divide);
 

@@ -6,7 +6,7 @@ public class MenuDrivenForNnumbers  {
 
 
 
-	public static void main(String[] args) throws InvalidInputException {
+	public static void main(String[] args)  {
 		int option,exit;
 		do
 		{
@@ -17,6 +17,7 @@ public class MenuDrivenForNnumbers  {
 			System.out.println("Enter your choice from the following menu:");
 			System.out.println("1.Addition 2.Subtraction 3.Multiplication 4.Division 5.Evaluation 6.Exit");
 			option = sc.nextInt();
+
 
 
 
@@ -43,20 +44,28 @@ public class MenuDrivenForNnumbers  {
 				break;
 			case 5:
 				ExpressionEvaluation evl = new ExpressionEvaluation();
-				evl.getResult();
+				evl.expression();
 				break;
 			case 6:
 				break;
 			default:
-				throw new InvalidInputException("Invalid Choice...!!");
+				System.out.println("Invalid Choice...!!");
 			}
 			System.out.println("Do you want to continue?1.Yes 2.No");
+			sc.close();
 			exit = sc.nextInt();
 		}while(exit==1);
+
 	}
 
-       
+
 }
+
+
+
+
+
+
 
 
 

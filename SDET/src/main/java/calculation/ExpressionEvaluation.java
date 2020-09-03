@@ -3,72 +3,61 @@ package calculation;
 import java.util.Scanner;
 
 public class ExpressionEvaluation  {
-
-
-
-	static boolean isOperand(char c)
-	{
-		return (c >= '0' && c <= '9');
+	
+		public  void expression(){
+		
 	}
-	static int operand(char c)
-	{
-		return (int)(c - '0');
-	}
-	static int evaluate(String exp)
-	{
-		if(exp.length() == 0)
-			return -1;
-		int result = operand(exp.charAt(0));
-		for(int index = 1; index < exp.length(); index += 2)
-		{
-			char opr = exp.charAt(index);
-			char opd = exp.charAt(index+1);
-			if(isOperand(opd) == false)
-				return -1;
-			if(opr == '+')
-				result = result + operand(opd);
-			else if(opr == '-')
-				result = result - operand(opd);
-			else if(opr == '*')
-				result = result * operand(opd);
-			else if(opr == '/')
-				result = result / operand(opd);
-			else
-				return -1;
-		}
-		return result;
-	}
-
-
-	void getResult()
+	
 	{
 		Scanner sc = new Scanner(System.in);
 		System.out.println("Input your Expression");
-		String exp1 = sc.next();
-		int result = evaluate(exp1);
-		try
+		String expression = sc.next();
+		String[] operands = expression.split("[\\+\\-\\*\\/]");
+		
+		String[] operators = expression.split("\\d+");
+		
+		int result = 0;
+		for(int index = 0; index < operators.length; index++)
 		{
-			if(result == -1)
-
-				throw new InvalidInputException("Expression Invalid");
+			int number = Integer.parseInt(operands[index]);
+			if(operators[index].equals("+"))
+			{
+				result = result + number;
+			}
+			else if(operators[index].equals("-"))
+			{
+				result = result - number;
+			}
+			else if(operators[index].equals("*"))
+			{
+				result = result * number;
+			}
+			else if(operators[index].equals("/"))
+			{
+				result = result / number;
+			}
+			else
+			{
+				result = result + number;
+			}
 		}
-		catch(InvalidInputException e)
-		{
-			System.out.println(e);
-		}
-
-
-
-		System.out.println("Value of the expression is " + result);
-		System.out.println("========================================");
+		System.out.println("Result = "+result);	
 
 
 		sc.close();
-
-
 	}
 }
 
 
+	
+		
+		
+
+			
+		
 
 
+
+		
+
+	

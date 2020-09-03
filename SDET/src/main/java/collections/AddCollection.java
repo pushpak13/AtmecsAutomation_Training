@@ -1,16 +1,17 @@
 package collections;
 
 
-import java.util.ArrayList;
+
+import java.util.Vector;
 
 
 public class AddCollection extends CalculateCollection {
-	public void add(ArrayList<Integer> alist) {
+	public void add(Vector<Integer> vector) {
 
-		for(int index = 0; index < alist.size(); index++)
+		for(int index = 0; index < vector.size(); index++)
 		{ 
 
-			sum = sum + alist.get(index);
+			sum = sum + vector.get(index);
 		}
 		System.out.println(sum);
 

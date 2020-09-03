@@ -1,14 +1,15 @@
 package collections;
 
-import java.util.ArrayList;
+
+import java.util.Vector;
 
 public class MultiplyCollection extends CalculateCollection {
-	public void mul(ArrayList<Integer> alist) {
+	public void mul(Vector<Integer> vector) {
 
-		for(int index=0; index < alist.size(); index++)
+		for(int index=0; index < vector.size(); index++)
 		{ 
 
-			multiply = multiply * alist.get(index);
+			multiply = multiply * vector.get(index);
 		}
 		System.out.println(multiply);
 
