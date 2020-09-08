@@ -31,7 +31,7 @@ public class DivisionNnumbers
 
 		System.out.println("Division of all numbers is "+result);
 
-
+		
 	}
 
 }

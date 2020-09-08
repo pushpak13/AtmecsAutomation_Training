@@ -21,7 +21,7 @@ public class AdditionOfNnumbers  {
 
 		System.out.print("Sum of all " +num1+ " numbers is " +result);
 
-
+		
 
 	}
 

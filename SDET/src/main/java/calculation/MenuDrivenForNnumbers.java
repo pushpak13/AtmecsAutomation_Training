@@ -51,15 +51,22 @@ public class MenuDrivenForNnumbers  {
 			default:
 				System.out.println("Invalid Choice...!!");
 			}
+			
 			System.out.println("Do you want to continue?1.Yes 2.No");
-			sc.close();
+		
 			exit = sc.nextInt();
+			
 		}while(exit==1);
-
+		
+		System.out.println("Exit the program.");
+		
 	}
 
+	
 
 }
+
+
 
 
 

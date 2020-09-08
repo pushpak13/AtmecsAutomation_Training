@@ -18,11 +18,11 @@ public class Calculator extends Divide
 	}
 
 	public static void main(String[] args) {
-		Scanner in = new Scanner(System.in);
+		Scanner sc = new Scanner(System.in);
 		Calculator obj = new Calculator();
 		for(;;) {
 			System.out.println("\nPlease select the operation:\n1: Add\n2: Sub\n3: Mul\n4: Div \n5:Exit\n\n Waiting for input : ");
-			int choice = in.nextInt();
+			int choice = sc.nextInt();
 			if(choice==5) {
 				System.out.println("Exiting system");
 				System.exit(0);  
@@ -48,8 +48,12 @@ public class Calculator extends Divide
 			System.out.println("Result : " + obj.result);
 			break;
 			default : System.out.println("Invalid Choice\n");
-			}
+			break;
 
+			}
+			
+			
 		}
 	}
+
 }

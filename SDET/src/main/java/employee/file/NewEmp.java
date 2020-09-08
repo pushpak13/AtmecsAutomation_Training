@@ -1,44 +1,14 @@
-package employee.data;
+package employee.file;
 
 
 
-public  class Employee   {
-	@Override
-	public int hashCode() {
-		final int prime = 31;
-		int result = 1;
-
-		result = prime * result + id;
-
-		return result;
-	}
-
-	@Override
-	public boolean equals(Object obj) {
-		if (this == obj) {
-			return true;
-		}
-		if (obj == null) {
-			return false;
-		}
-		if (getClass() != obj.getClass()) {
-			return false;
-		}
-		Employee other = (Employee) obj;
-
-		if (id != other.id) {
-			return false;
-		}
-
-		return true;
-	}
-
+public class NewEmp {
+	
 	int id;
 	String name;
 	String department;
 	String designation;
 	int salary;
-
 	public int getId() {
 		return id;
 	}
@@ -69,7 +39,7 @@ public  class Employee   {
 	public void setSalary(int salary) {
 		this.salary = salary;
 	}
-	public Employee(int id, String name, String department, String designation, int salary) {
+	public NewEmp(int id, String name, String department, String designation, int salary) {
 		super();
 		this.id = id;
 		this.name = name;
@@ -77,16 +47,31 @@ public  class Employee   {
 		this.designation = designation;
 		this.salary = salary;
 	}
-
 	@Override
 	public String toString() {
-		return "Employee [id=" + id + ", name=" + name + ", department=" + department + ", designation=" + designation
+		return "NewEmp [id=" + id + ", name=" + name + ", department=" + department + ", designation=" + designation
 				+ ", salary=" + salary + "]";
 	}
-
-
-
+	@Override
+	public int hashCode() {
+		final int prime = 31;
+		int result = 1;
+		result = prime * result + id;
+		return result;
+	}
+	@Override
+	public boolean equals(Object obj) {
+		if (this == obj)
+			return true;
+		if (obj == null)
+			return false;
+		if (getClass() != obj.getClass())
+			return false;
+		NewEmp other = (NewEmp) obj;
+		if (id != other.id)
+			return false;
+		return true;
+	}
+	
+	
 }
-
-
-

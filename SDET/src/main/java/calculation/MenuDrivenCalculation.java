@@ -46,7 +46,8 @@ public class MenuDrivenCalculation {
 			}
 			System.out.println("Do you want to continue?1.Yes 2.No");
 			exit = sc.nextInt();
-		}while(exit==1);                                 
+		}while(exit==1);  
+		
 	}
 
 
