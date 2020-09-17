@@ -1,6 +1,7 @@
 package test;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
@@ -14,7 +15,7 @@ public class AnnotationBrowserTest {
 
 	public String baseUrl = "http://www.atmecs.com/";
 	String driverPath = "C:\\Users\\pushpak.madhavan\\eclipse-workspace\\SeleniumTraining\\drives\\firefox driver\\geckodriver.exe";
-	public FirefoxDriver driver; 
+	public WebDriver driver; 
 	public String expected = null;
 	public String actual = null;
 	@BeforeTest
@@ -51,8 +52,6 @@ public class AnnotationBrowserTest {
 		Thread.sleep(2000);
 	}
 
-
-
 	@AfterMethod
 	public void goBackToHomepage ( ) throws InterruptedException {
 		driver.findElement(By.linkText("Home")).click() ;
@@ -67,6 +66,8 @@ public class AnnotationBrowserTest {
 
 
 }
+
+	
 
 
 
