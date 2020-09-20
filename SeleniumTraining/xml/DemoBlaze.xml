@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="DemoBlaze">
+  <test name="SignUp">
+  <classes>
+  <class name = 'demoblaze.SignUp'/>
+   </classes>
+  </test> <!-- Test -->
+  <test name = "LogIn">
+   <classes>
+    <class name = 'demoblaze.LogIn'/>
+    </classes>
+  </test>
+   <test name = "AddCart">
+   <classes>
+    <class name = 'demoblaze.AddCart'/>
+    </classes>
+  </test>
+      <test name = "ValidateCart">
+   <classes>
+    <class name = 'demoblaze.ValidateCart'/>
+    </classes>
+  </test>
+     <test name = "Contact">
+   <classes>
+    <class name = 'demoblaze.Contact'/>
+    </classes>
+  </test>
+</suite> <!-- Suite -->

@@ -3,15 +3,15 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="test.TicketBooking">
+      <class name="automationdemo.FaceBook">
         <methods>
-          <include name="quitbrowser"/>
+          <include name="setUp"/>
+          <include name="testEnds"/>
+          <include name="faceBook"/>
           <include name="propertyFile"/>
-          <include name="testends"/>
-          <include name="signup"/>
-          <include name="setup"/>
+          <include name="tearDown"/>
         </methods>
-      </class> <!-- test.TicketBooking -->
+      </class> <!-- automationdemo.FaceBook -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
