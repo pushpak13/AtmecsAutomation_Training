@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2020-09-30T11:56:03 IST" name="Default suite" finished-at="2020-09-30T11:57:14 IST" duration-ms="71691">
+    <groups>
+    </groups>
+    <test started-at="2020-09-30T11:56:03 IST" name="Default test" finished-at="2020-09-30T11:57:14 IST" duration-ms="71691">
+      <class name="com.atmecs.excel.dataprovider.ChatExcelTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.atmecs.excel.dataprovider.ChatExcelTest@2bbf180e]" started-at="2020-09-30T11:56:03 IST" name="setUp" finished-at="2020-09-30T11:56:16 IST" duration-ms="13097" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="chatData(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.atmecs.excel.dataprovider.ChatExcelTest@2bbf180e]" started-at="2020-09-30T11:56:16 IST" name="chatData" data-provider="ChatData" finished-at="2020-09-30T11:57:13 IST" duration-ms="56833" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[xyz]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Num9012456780]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[abd@gmail.com]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- chatData -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.atmecs.excel.dataprovider.ChatExcelTest@2bbf180e]" started-at="2020-09-30T11:57:13 IST" name="tearDown" finished-at="2020-09-30T11:57:14 IST" duration-ms="1149" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.atmecs.excel.dataprovider.ChatExcelTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
